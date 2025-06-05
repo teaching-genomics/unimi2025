@@ -1,7 +1,7 @@
-# BGPAV 2024 
+# GEES UNIMI 2025
 
-PhD Program in Genetics, Molecular and Cellular Biology  
-"Bioinformatics for genome and pangenome assembly, analysis and visualization" advanced course
+PhD Program in Environmental Sciences  
+Ph.D. course in Genomics for ecological and evolutionary studies 2024/25
 
 ## Instructors
 
