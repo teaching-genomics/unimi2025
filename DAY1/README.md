@@ -1,4 +1,4 @@
-# BGPAV 2024 Day1
+# GEES 2025 Day1
 
 ## Installation (use this if you want to replicate the practical but installing the tools yourself in your machine)
 
