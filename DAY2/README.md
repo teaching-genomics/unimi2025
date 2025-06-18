@@ -1,4 +1,4 @@
-# BGPAV 2024 Day2
+# GEES 2025 Day2
 
 ## Tools used 
 For this section we will use the tools vg (https://github.com/vgteam/vg), Bandage, PGGB (https://github.com/pangenome/pggb#installation)  
