@@ -11,7 +11,7 @@ First run it without parameters to get information on its usage
 ```
 vg construct
 ```
-Move to /pavia2024/DAY2 folder (using cd command). Let’s start by constructing a graph from one single sequence. This will create a graph that just consists of a linear chain of nodes, each with 32 characters.
+Move to /unimi2025/DAY2 folder (using cd command). Let’s start by constructing a graph from one single sequence. This will create a graph that just consists of a linear chain of nodes, each with 32 characters.
 ```
 vg construct -r data/tiny/tiny.fa -m 32 > tiny.ref.vg
 ```
