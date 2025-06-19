@@ -113,17 +113,17 @@ What information can you get about the assembly?
 
 ## Alignment
 Now let's download some short reads to align to the reference genome we just downloaded.  
-The idea is that everyone should pick a different sample
+The idea is that everyone should pick a different sample. Search for sequencing reads under the SRA NCBI archive. Apply the following filters-> Platform: Illumina; Source: DNA; paired end; File type: fastq
 ```
-fasterq-dump SRR10428014  #fasterq-dump is a tool to download seequences from NCBI-SRA
+fasterq-dump SRR34050397  #fasterq-dump is a tool to download seequences from NCBI-SRA
 ```
 Let's explore the fastq format. How can we visualize the first read?
 ```
-cat SRR10428014_1.fastq | head -4
+cat SRR34050397_1.fastq | head -4
 ```
 How many reads do we have in total? Let's count the number of lines 
 ```
-cat SRR10428014_1.fastq | wc -l
+cat SRR34050397_1.fastq | wc -l
 ```
 Output example: 5270084
 And divide by four:
@@ -133,8 +133,8 @@ echo $(( 5270084 / 4 ))
 We will assess raw read quality using rdeval, a very useful software to analyse raw data.
 
 ```
-rdeval SRR10428014_1.fastq 4641652   #the command needs the genome size in bp
-rdeval SRR10428014_2.fastq 4641652   #the command needs the genome size in bp
+rdeval SRR34050397_1.fastq 4641652   #the command needs the genome size in bp
+rdeval SRR34050397_1.fastq 4641652   #the command needs the genome size in bp
 ```
 Anayze the output trying to interpret the results according to what you learned during the theoretical lessons about NGS. 
 And now let's align the reads to our reference. First we need to index the reference to make it faster to access:
@@ -144,7 +144,7 @@ bowtie2-build e_coli.fasta ecoli  #The command should print many lines of output
 ```
 Then we can align the reads:
 ```
-bowtie2 -x ecoli -1 SRR10428014_1.fastq -2 SRR10428014_2.fastq -p 4 > alignment.sam
+bowtie2 -x ecoli -1 SRR34050397_1.fastq -2 SRR34050397_2.fastq -p 4 > alignment.sam
 ```
 Now let's convert our alignment into a format that IGV can read (bam):
 ```
