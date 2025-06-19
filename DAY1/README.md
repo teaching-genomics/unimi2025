@@ -87,20 +87,18 @@ conda install -c bioconda hifiasm
 
 ## Reference genome
 1. go to https://www.ncbi.nlm.nih.gov/
-2. search for 'e coli' (without quotes) 
-3. under the 'Genomes' tab, click 'Genome'
-4. select the first result
-5. under 'NCBI RefSeq assembly' > RefSeq click on Actions--> see more files on ftp
-6. Right click on the file 'GCF_000005845.2_ASM584v2_genomic.fna.gz' and select "copia indirizzo link" / "copy link address"
-
+2. search for 'e coli' (without quotes) under the Assembly search engine
+3. under 'NCBI RefSeq assembly' line click 'see more files on ftp' (will pop up selecting the three vertical points)
+4. Right click on the file 'GCF_000005845.2_ASM584v2_genomic.fna.gz' and select "copia indirizzo link" / "copy link address"
+                            
 
 Retrieve E. coli reference genome (wget command and then paste the adress you just copied) in the gitpod workspace
 
 ```
 wget https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_genomic.fna.gz
 ```
-
 Gunzip the genome and rename it for brevity
+
 ```
 gunzip GCF_000005845.2_ASM584v2_genomic.fna.gz
 mv GCF_000005845.2_ASM584v2_genomic.fna e_coli.fasta
